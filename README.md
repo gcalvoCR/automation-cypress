@@ -16,12 +16,6 @@ Then we can run cypress for the first time:
 
 =======
 
-## Notes:
-
-- `npx` runs npm commands locally
-
-- _Mocha_ is the testrunner for Cypress.
-
 ## Allure:
 
 To install:
@@ -44,7 +38,7 @@ To check to allure report
 - MAC --> `export KEY_NAME=VALUE`
 - Windows --> `set KEY_NAME=VALUE`
 
-### Interesting notes:
+### Notes (reminders):
 
 - _Mocha_ is the testrunner for Cypress.
 
