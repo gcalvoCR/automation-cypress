@@ -9,7 +9,6 @@ cypress-concepts
 - to start a npm package `npm init -y`
 - to install cypress version 3 `npm install cypress@3`
 - to install cypress latest version `npm install cypress`
-  > > > > > > > 13c82ccca208da6db77706e54e168b22e6c6898d
 
 Then we can run cypress for the first time:
 
@@ -18,8 +17,6 @@ Then we can run cypress for the first time:
 =======
 
 ## Notes:
-
-- `npx` runs npm commands locally
 
 - `npx` runs npm commands locally
 
@@ -39,9 +36,6 @@ To generate report:
 - Locally --> `npx allure generate`
 
 To check to allure report
-
-<<<<<<< HEAD
-
 - Globally --> ` allure open`
 - Locally --> `npx allure open`
 
