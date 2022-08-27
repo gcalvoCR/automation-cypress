@@ -23,6 +23,6 @@
     "mocha-allure-reporter": "^1.4.0"
   },
   "devDependencies": {
-    "cypress": "^10.3.0"
+    "cypress": "^10.6.0"
   }
 }

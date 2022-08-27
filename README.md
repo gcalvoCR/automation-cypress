@@ -1,46 +1,53 @@
 # cypress-concepts
 
-cypress-concepts
+cypress base project
+Last update : 08/27/2022
 
 =======
 
-## Initial work
+## Set up
 
-- to start a npm package `npm init -y`
-- to install cypress version 3 `npm install cypress@3`
-- to install cypress latest version `npm install cypress`
+- `npm install`               to install the dependencies
+- `npx cypress open`          to open the app
 
-Then we can run cypress for the first time:
-
-- type `npx cypress open` and it will open a
-
+## Useful commands
+- `npm init -y`               to start a npm package
+- `npm install cypress@10.6.0`to install cypress specific version 10.6.0 
+- `export KEY_NAME=VALUE`     set up an env variable in MAC
+- `set KEY_NAME=VALUE`        to set up an env variable in Windows
 =======
+
+## Running in Docker
+- `docker run -it -v $PWD:/e2e -w /e2e cypress/included:10.6.0`
+- `docker run -it -v ${PWD}:/e2e -w /e2e cypress/included:10.6.0`
+
+  - `it`                      = interactive terminal
+  - `-v ${PWD}:/e2e`          = map current folder to /e2e in the container
+  - `-w /e2e`                 = set working directory to e2e
+  - `-e CYPRESS_baseUrl=...`  = pass environment variable CYPRESS_baseUrl
+  - `cypress/included:9.2.0`  = name of the Docker image with tag
 
 ## Allure:
 
-To install:
+- `npm install -g allure-commandline --save-dev` to install globally.
+- `npm install allure-commandline --save-dev` to install locally.
+- `allure generate` to generate the html report.
+- `allure serve` to generate and serve the html report.
+- `allure open` to serve the html report.
 
-- Globally --> `npm install -g allure-commandline --save-dev`
-- Locally --> `npm install allure-commandline --save-dev`
-  - More info [here](https://www.npmjs.com/package/allure-commandline)
+## Useful links
+- [cypress documentation](https://docs.cypress.io/guides/overview/why-cypress)
+- [Allure documentation](https://www.npmjs.com/package/allure-commandline)
 
-To generate report:
 
-- Globally --> ` allure generate`
-- Locally --> `npx allure generate`
+Blogs
+- [Stop using Page Objects](https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/)
+- [Cypress recipes](https://github.com/cypress-io/cypress-example-recipes#application-actions)
 
-To check to allure report
-- Globally --> ` allure open`
-- Locally --> `npx allure open`
-
-# To env variable
-
-- MAC --> `export KEY_NAME=VALUE`
-- Windows --> `set KEY_NAME=VALUE`
-
-### Notes (reminders):
+### Random notes (reminders):
 
 - _Mocha_ is the testrunner for Cypress.
+- Node.js 12 or 14 and above is required.
 
 ---
 
