@@ -1,9 +1,11 @@
-# cypress-concepts
+# cypress-base
 
 cypress base project
-Last update : 08/27/2022
+Last update : 07/11/2023
 
 =======
+
+This project uses Typescript and Cypress version `12.7`.
 
 ## Set up
 
@@ -48,7 +50,6 @@ Blogs
 
 - _Mocha_ is the testrunner for Cypress.
 - Node.js 12 or 14 and above is required.
-
 ---
 
 ### By: Gabriel Calvo Vargas

@@ -4,25 +4,25 @@
   "description": "cypress-learning",
   "main": "index.js",
   "scripts": {
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "test": "npx cypress run",
+    "build": "tsc",
+    "lint": "tsc --project tsconfig.lint.json",
+    "lint:cypress": "tsc --project cypress/tsconfig.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gcalvoCR/cypress-learning.git"
+    "url": "git+https://github.com/gcalvoCR/cypress-base.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gcalvoCR/cypress-learning/issues"
+    "url": "https://github.com/gcalvoCR/cypress-base/issues"
   },
-  "homepage": "https://github.com/gcalvoCR/cypress-learning#readme",
-  "dependencies": {
-    "allure-commandline": "^2.9.0",
-    "mocha": "^6.2.2",
-    "mocha-allure-reporter": "^1.4.0"
-  },
+  "homepage": "https://github.com/gcalvoCR/cypress-base#readme",
   "devDependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^12.17.1",
+    "typescript": "^5.1.6"
   }
 }
